@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4F4517F21482C37D00CBA0EB /* mogenerator Standard Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F4517F51482C37D00CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Standard Templates" */;
+			buildPhases = (
+				4F4517FF1482C3B000CBA0EB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "mogenerator Standard Templates";
+			productName = "mogenerator Standard Templates";
+		};
+		4F4517F71482C39100CBA0EB /* mogenerator Version 1 Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F4517F81482C39100CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Version 1 Templates" */;
+			buildPhases = (
+				4F4518001482C3EC00CBA0EB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "mogenerator Version 1 Templates";
+			productName = "mogenerator Version 1 Templates";
+		};
+		4F4517FB1482C39B00CBA0EB /* mogenerator Version 2 Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F4517FC1482C39B00CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Version 2 Templates" */;
+			buildPhases = (
+				4F4518011482C3FE00CBA0EB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "mogenerator Version 2 Templates";
+			productName = "mogenerator Version 2 Templates";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4F0E93D41478D1C6003A0F02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0E93D31478D1C6003A0F02 /* Cocoa.framework */; };
+		4F0E93DE1478D1C6003A0F02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E93DC1478D1C6003A0F02 /* InfoPlist.strings */; };
+		4F0E93E01478D1C6003A0F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E93DF1478D1C6003A0F02 /* main.m */; };
+		4F0E93E41478D1C6003A0F02 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E93E21478D1C6003A0F02 /* Credits.rtf */; };
+		4F0E93E71478D1C6003A0F02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E93E61478D1C6003A0F02 /* AppDelegate.m */; };
+		4F0E93EA1478D1C7003A0F02 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E93E81478D1C7003A0F02 /* MainMenu.xib */; };
+		4F0E93ED1478D1C7003A0F02 /* mogenerator Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E93EB1478D1C7003A0F02 /* mogenerator Example.xcdatamodeld */; };
+		4F4518111482C88900CBA0EB /* _Measurements.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F45180E1482C88900CBA0EB /* _Measurements.m */; };
+		4F4518121482C88900CBA0EB /* Measurements.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4518101482C88900CBA0EB /* Measurements.m */; };
+		4F4518151483115000CBA0EB /* OSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4518141483115000CBA0EB /* OSVersion.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F0E93CF1478D1C6003A0F02 /* mogenerator Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mogenerator Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0E93D31478D1C6003A0F02 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F0E93D61478D1C6003A0F02 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F0E93D71478D1C6003A0F02 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F0E93D81478D1C6003A0F02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F0E93DB1478D1C6003A0F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0E93DD1478D1C6003A0F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F0E93DF1478D1C6003A0F02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F0E93E11478D1C6003A0F02 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4F0E93E31478D1C6003A0F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4F0E93E51478D1C6003A0F02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F0E93E61478D1C6003A0F02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F0E93E91478D1C7003A0F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4F0E93EC1478D1C7003A0F02 /* mogenerator Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "mogenerator Example.xcdatamodel"; sourceTree = "<group>"; };
+		4F4518041482C5FE00CBA0EB /* human.h.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = human.h.motemplate; sourceTree = "<group>"; };
+		4F4518051482C5FE00CBA0EB /* human.m.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = human.m.motemplate; sourceTree = "<group>"; };
+		4F4518061482C5FE00CBA0EB /* machine.h.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = machine.h.motemplate; sourceTree = "<group>"; };
+		4F4518071482C5FE00CBA0EB /* machine.m.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = machine.m.motemplate; sourceTree = "<group>"; };
+		4F4518091482C5FE00CBA0EB /* human.h.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = human.h.motemplate; sourceTree = "<group>"; };
+		4F45180A1482C5FE00CBA0EB /* human.m.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = human.m.motemplate; sourceTree = "<group>"; };
+		4F45180B1482C5FE00CBA0EB /* machine.h.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = machine.h.motemplate; sourceTree = "<group>"; };
+		4F45180C1482C5FE00CBA0EB /* machine.m.motemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = machine.m.motemplate; sourceTree = "<group>"; };
+		4F45180D1482C88900CBA0EB /* _Measurements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Measurements.h; sourceTree = "<group>"; };
+		4F45180E1482C88900CBA0EB /* _Measurements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Measurements.m; sourceTree = "<group>"; };
+		4F45180F1482C88900CBA0EB /* Measurements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
+		4F4518101482C88900CBA0EB /* Measurements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Measurements.m; sourceTree = "<group>"; };
+		4F4518131483115000CBA0EB /* OSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSVersion.h; sourceTree = "<group>"; };
+		4F4518141483115000CBA0EB /* OSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSVersion.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F0E93CC1478D1C6003A0F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0E93D41478D1C6003A0F02 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F0E93C41478D1C6003A0F02 = {
+			isa = PBXGroup;
+			children = (
+				4F0E93E51478D1C6003A0F02 /* AppDelegate.h */,
+				4F0E93E61478D1C6003A0F02 /* AppDelegate.m */,
+				4F0E93E81478D1C7003A0F02 /* MainMenu.xib */,
+				4F4518131483115000CBA0EB /* OSVersion.h */,
+				4F4518141483115000CBA0EB /* OSVersion.m */,
+				4F0E93EB1478D1C7003A0F02 /* mogenerator Example.xcdatamodeld */,
+				4F45180F1482C88900CBA0EB /* Measurements.h */,
+				4F4518101482C88900CBA0EB /* Measurements.m */,
+				4F45180D1482C88900CBA0EB /* _Measurements.h */,
+				4F45180E1482C88900CBA0EB /* _Measurements.m */,
+				4F4518021482C5FE00CBA0EB /* mogenerator Templates */,
+				4F0E93DA1478D1C6003A0F02 /* Supporting Files */,
+				4F0E93D21478D1C6003A0F02 /* Frameworks */,
+				4F0E93D01478D1C6003A0F02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F0E93D01478D1C6003A0F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E93CF1478D1C6003A0F02 /* mogenerator Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F0E93D21478D1C6003A0F02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E93D31478D1C6003A0F02 /* Cocoa.framework */,
+				4F0E93D51478D1C6003A0F02 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0E93D51478D1C6003A0F02 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E93D61478D1C6003A0F02 /* AppKit.framework */,
+				4F0E93D71478D1C6003A0F02 /* CoreData.framework */,
+				4F0E93D81478D1C6003A0F02 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4F0E93DA1478D1C6003A0F02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E93DB1478D1C6003A0F02 /* Info.plist */,
+				4F0E93DC1478D1C6003A0F02 /* InfoPlist.strings */,
+				4F0E93DF1478D1C6003A0F02 /* main.m */,
+				4F0E93E11478D1C6003A0F02 /* Prefix.pch */,
+				4F0E93E21478D1C6003A0F02 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F4518021482C5FE00CBA0EB /* mogenerator Templates */ = {
+			isa = PBXGroup;
+			children = (
+				4F4518031482C5FE00CBA0EB /* Version 1 */,
+				4F4518081482C5FE00CBA0EB /* Version 2 */,
+			);
+			path = "mogenerator Templates";
+			sourceTree = "<group>";
+		};
+		4F4518031482C5FE00CBA0EB /* Version 1 */ = {
+			isa = PBXGroup;
+			children = (
+				4F4518041482C5FE00CBA0EB /* human.h.motemplate */,
+				4F4518051482C5FE00CBA0EB /* human.m.motemplate */,
+				4F4518061482C5FE00CBA0EB /* machine.h.motemplate */,
+				4F4518071482C5FE00CBA0EB /* machine.m.motemplate */,
+			);
+			path = "Version 1";
+			sourceTree = "<group>";
+		};
+		4F4518081482C5FE00CBA0EB /* Version 2 */ = {
+			isa = PBXGroup;
+			children = (
+				4F4518091482C5FE00CBA0EB /* human.h.motemplate */,
+				4F45180A1482C5FE00CBA0EB /* human.m.motemplate */,
+				4F45180B1482C5FE00CBA0EB /* machine.h.motemplate */,
+				4F45180C1482C5FE00CBA0EB /* machine.m.motemplate */,
+			);
+			path = "Version 2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F0E93CE1478D1C6003A0F02 /* mogenerator Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0E93F01478D1C7003A0F02 /* Build configuration list for PBXNativeTarget "mogenerator Example" */;
+			buildPhases = (
+				4F0E93CB1478D1C6003A0F02 /* Sources */,
+				4F0E93CC1478D1C6003A0F02 /* Frameworks */,
+				4F0E93CD1478D1C6003A0F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mogenerator Example";
+			productName = "mogenerator Example";
+			productReference = 4F0E93CF1478D1C6003A0F02 /* mogenerator Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F0E93C61478D1C6003A0F02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4F0E93C91478D1C6003A0F02 /* Build configuration list for PBXProject "mogenerator Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F0E93C41478D1C6003A0F02;
+			productRefGroup = 4F0E93D01478D1C6003A0F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F0E93CE1478D1C6003A0F02 /* mogenerator Example */,
+				4F4517F21482C37D00CBA0EB /* mogenerator Standard Templates */,
+				4F4517F71482C39100CBA0EB /* mogenerator Version 1 Templates */,
+				4F4517FB1482C39B00CBA0EB /* mogenerator Version 2 Templates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F0E93CD1478D1C6003A0F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0E93DE1478D1C6003A0F02 /* InfoPlist.strings in Resources */,
+				4F0E93E41478D1C6003A0F02 /* Credits.rtf in Resources */,
+				4F0E93EA1478D1C7003A0F02 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F4517FF1482C3B000CBA0EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Phrase Memorizer.xcdatamodeld/mogenerator Example.xcdatamodel",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Measurements.h",
+				"$(SRCROOT)/Measurements.m",
+				"$(SRCROOT)/_Measurements.h",
+				"$(SRCROOT)/_Measurements.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m \"${SRCROOT}/mogenerator Example.xcdatamodeld/mogenerator Example.xcdatamodel\" -O \"${SRCROOT}\"";
+		};
+		4F4518001482C3EC00CBA0EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Phrase Memorizer.xcdatamodeld/mogenerator Example.xcdatamodel",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Measurements.h",
+				"$(SRCROOT)/Measurements.m",
+				"$(SRCROOT)/_Measurements.h",
+				"$(SRCROOT)/_Measurements.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m \"${SRCROOT}/mogenerator Example.xcdatamodeld/mogenerator Example.xcdatamodel\" -O \"${SRCROOT}\" --template-path \"${SRCROOT}/mogenerator Templates/Version 1\"";
+		};
+		4F4518011482C3FE00CBA0EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Phrase Memorizer.xcdatamodeld/mogenerator Example.xcdatamodel",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Measurements.h",
+				"$(SRCROOT)/Measurements.m",
+				"$(SRCROOT)/_Measurements.h",
+				"$(SRCROOT)/_Measurements.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m \"${SRCROOT}/mogenerator Example.xcdatamodeld/mogenerator Example.xcdatamodel\" -O \"${SRCROOT}\" --template-path \"${SRCROOT}/mogenerator Templates/Version 2\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F0E93CB1478D1C6003A0F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0E93E01478D1C6003A0F02 /* main.m in Sources */,
+				4F0E93E71478D1C6003A0F02 /* AppDelegate.m in Sources */,
+				4F0E93ED1478D1C7003A0F02 /* mogenerator Example.xcdatamodeld in Sources */,
+				4F4518111482C88900CBA0EB /* _Measurements.m in Sources */,
+				4F4518121482C88900CBA0EB /* Measurements.m in Sources */,
+				4F4518151483115000CBA0EB /* OSVersion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F0E93DC1478D1C6003A0F02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0E93DD1478D1C6003A0F02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F0E93E21478D1C6003A0F02 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0E93E31478D1C6003A0F02 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4F0E93E81478D1C7003A0F02 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0E93E91478D1C7003A0F02 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F0E93EE1478D1C7003A0F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		4F0E93EF1478D1C7003A0F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		4F0E93F11478D1C7003A0F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F0E93F21478D1C7003A0F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4F4517F31482C37D00CBA0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4F4517F41482C37D00CBA0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4F4517F91482C39100CBA0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4F4517FA1482C39100CBA0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4F4517FD1482C39B00CBA0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4F4517FE1482C39B00CBA0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F0E93C91478D1C6003A0F02 /* Build configuration list for PBXProject "mogenerator Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E93EE1478D1C7003A0F02 /* Debug */,
+				4F0E93EF1478D1C7003A0F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0E93F01478D1C7003A0F02 /* Build configuration list for PBXNativeTarget "mogenerator Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E93F11478D1C7003A0F02 /* Debug */,
+				4F0E93F21478D1C7003A0F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F4517F51482C37D00CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Standard Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4517F31482C37D00CBA0EB /* Debug */,
+				4F4517F41482C37D00CBA0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F4517F81482C39100CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Version 1 Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4517F91482C39100CBA0EB /* Debug */,
+				4F4517FA1482C39100CBA0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F4517FC1482C39B00CBA0EB /* Build configuration list for PBXAggregateTarget "mogenerator Version 2 Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F4517FD1482C39B00CBA0EB /* Debug */,
+				4F4517FE1482C39B00CBA0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F0E93EB1478D1C7003A0F02 /* mogenerator Example.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F0E93EC1478D1C7003A0F02 /* mogenerator Example.xcdatamodel */,
+			);
+			currentVersion = 4F0E93EC1478D1C7003A0F02 /* mogenerator Example.xcdatamodel */;
+			path = "mogenerator Example.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F0E93C61478D1C6003A0F02 /* Project object */;
+}
