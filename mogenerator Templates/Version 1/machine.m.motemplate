@@ -1,3 +1,14 @@
+//
+//  _<$managedObjectClassName$>.m
+//  mogenerator Example http://github.com/apontious/mogenerator-Example
+//
+//  Created by Andrew Pontious on 11/13/11.
+//  Copyright (c) 2011 Andrew Pontious.
+//  Some right reserved: http://opensource.org/licenses/mit-license.php
+//
+
+// This is Version 1 of the template files for this project, where the scalar getter/setter methods are implemented entirely in boilerplate code.
+
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
 // Make changes to <$managedObjectClassName$>.m instead.
 
@@ -8,70 +19,48 @@
 
 @implementation _<$managedObjectClassName$>
 
-+ (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
++ (id)insertInManagedObjectContext:(NSManagedObjectContext *)moc_ {
 	NSParameterAssert(moc_);
 	return [NSEntityDescription insertNewObjectForEntityForName:@"<$name$>" inManagedObjectContext:moc_];
 }
 
-+ (NSString*)entityName {
++ (NSString *)entityName {
 	return @"<$name$>";
 }
 
-+ (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_ {
++ (NSEntityDescription *)entityInManagedObjectContext:(NSManagedObjectContext *)moc_ {
 	NSParameterAssert(moc_);
 	return [NSEntityDescription entityForName:@"<$name$>" inManagedObjectContext:moc_];
 }
 
-- (<$managedObjectClassName$>ID*)objectID {
-	return (<$managedObjectClassName$>ID*)[super objectID];
+- (<$managedObjectClassName$>ID *)objectID {
+	return (<$managedObjectClassName$>ID *)[super objectID];
 }
 
-+ (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
-	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
-	<$foreach Attribute noninheritedAttributes do$><$if Attribute.hasDefinedAttributeType$><$if Attribute.hasScalarAttributeType$>
-	if ([key isEqualToString:@"<$Attribute.name$>Value"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"<$Attribute.name$>"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-	}<$endif$><$endif$><$endforeach do$>
+<$foreach Attribute noninheritedAttributes do$><$if Attribute.hasDefinedAttributeType$><$if Attribute.hasScalarAttributeType$><$else$>@dynamic <$Attribute.name$>;
+<$endif$><$endif$><$endforeach do$>
 
-	return keyPaths;
-}
-
-<$foreach Attribute noninheritedAttributes do$>
-<$if Attribute.hasDefinedAttributeType$>
-
-@dynamic <$Attribute.name$>;
-
-<$if Attribute.hasScalarAttributeType$>
-
-- (<$Attribute.scalarAttributeType$>)<$Attribute.name$>Value {
-	NSNumber *result = [self <$Attribute.name$>];
-	return [result <$Attribute.scalarAttributeType.camelCaseString$>Value];
-}
-
-- (void)set<$Attribute.name.initialCapitalString$>Value:(<$Attribute.scalarAttributeType$>)value_ {
-	[self set<$Attribute.name.initialCapitalString$>:[NSNumber numberWith<$Attribute.scalarAttributeType.camelCaseString.initialCapitalString$>:value_]];
-}
-
-- (<$Attribute.scalarAttributeType$>)primitive<$Attribute.name.initialCapitalString$>Value {
+<$foreach Attribute noninheritedAttributes do$><$if Attribute.hasDefinedAttributeType$><$if Attribute.hasScalarAttributeType$>
+- (<$Attribute.scalarAttributeType$>)<$Attribute.name$> {
+	[self willAccessValueForKey:@"<$Attribute.name$>"];
 	NSNumber *result = [self primitive<$Attribute.name.initialCapitalString$>];
+	[self didAccessValueForKey:@"<$Attribute.name$>"];
 	return [result <$Attribute.scalarAttributeType.camelCaseString$>Value];
 }
-
-- (void)setPrimitive<$Attribute.name.initialCapitalString$>Value:(<$Attribute.scalarAttributeType$>)value_ {
-	[self setPrimitive<$Attribute.name.initialCapitalString$>:[NSNumber numberWith<$Attribute.scalarAttributeType.camelCaseString.initialCapitalString$>:value_]];
+- (void)set<$Attribute.name.initialCapitalString$>:(<$Attribute.scalarAttributeType$>)value {
+	[self willChangeValueForKey:@"<$Attribute.name$>"];
+	[self setPrimitive<$Attribute.name.initialCapitalString$>:[NSNumber numberWith<$Attribute.scalarAttributeType.camelCaseString.initialCapitalString$>:value]];
+	[self didChangeValueForKey:@"<$Attribute.name$>"];
 }
-<$endif$>
-<$endif$>
-<$endforeach do$>
+<$endif$><$endif$><$endforeach do$>
 
 <$foreach Relationship noninheritedRelationships do$>
 @dynamic <$Relationship.name$>;
 
 	<$if Relationship.isToMany$>
-- (<$Relationship.mutableCollectionClassName$>*)<$Relationship.name$>Set {
+- (<$Relationship.mutableCollectionClassName$> *)<$Relationship.name$>Set {
 	[self willAccessValueForKey:@"<$Relationship.name$>"];
-	<$Relationship.mutableCollectionClassName$> *result = (<$Relationship.mutableCollectionClassName$>*)[self mutableSetValueForKey:@"<$Relationship.name$>"];
+	<$Relationship.mutableCollectionClassName$> *result = (<$Relationship.mutableCollectionClassName$> *)[self mutableSetValueForKey:@"<$Relationship.name$>"];
 	[self didAccessValueForKey:@"<$Relationship.name$>"];
 	return result;
 }
@@ -84,7 +73,7 @@
 
 <$foreach FetchRequest prettyFetchRequests do$>
 <$if FetchRequest.singleResult$>
-+ (id)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext*)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>{
++ (id)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext *)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>{
 	NSError *error = nil;
 	id result = [self fetch<$FetchRequest.name.initialCapitalString$>:moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:<$Binding.name$>_ <$endforeach do2$>error:&error];
 	if (error) {
@@ -96,7 +85,7 @@
 	}
 	return result;
 }
-+ (id)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext*)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>error:(NSError**)error_ {
++ (id)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext *)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>error:(NSError **)error_ {
 	NSParameterAssert(moc_);
 	NSError *error = nil;
 	
@@ -137,7 +126,7 @@
 	return result;
 }
 <$else$>
-+ (NSArray*)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext*)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>{
++ (NSArray *)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext *)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>{
 	NSError *error = nil;
 	NSArray *result = [self fetch<$FetchRequest.name.initialCapitalString$>:moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:<$Binding.name$>_ <$endforeach do2$>error:&error];
 	if (error) {
@@ -149,7 +138,7 @@
 	}
 	return result;
 }
-+ (NSArray*)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext*)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>error:(NSError**)error_ {
++ (NSArray *)fetch<$FetchRequest.name.initialCapitalString$>:(NSManagedObjectContext *)moc_ <$foreach Binding FetchRequest.bindings do2$><$Binding.name$>:(<$Binding.type$>)<$Binding.name$>_ <$endforeach do2$>error:(NSError **)error_ {
 	NSParameterAssert(moc_);
 	NSError *error = nil;
 	
